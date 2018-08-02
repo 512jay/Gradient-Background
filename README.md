@@ -3,7 +3,7 @@ Genrate gradient backgrounds
 
 An exercise from zero to mastery course from Andrie
 
-This exercise is about <code><input type="color"></code> and linear-gradient().
+This exercise is about input type="color" and linear-gradient().
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color#HTML
 
