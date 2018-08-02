@@ -17,7 +17,7 @@ let setGradient = () => {
   	+ color2.value
   	+ ")";
 
-  	css.textContent = body.style.background + ";";
+  	css.textContent = body.style.background;
   	console.log("instance ran");
 }
 
