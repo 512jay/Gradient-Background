@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body 
+{
+	font: 400 1em 'Raleway', sans-serif;
+  color: rgba(0,0,0,.5);
+  letter-spacing: .5em;
+  top: 15%;
+  text-align: center;
+  text-transform: uppercase;
+  height: 100%;
+}
+
+h1 {
+  font: 900 5em 'Raleway', sans-serif; 
+  font-style: italic;
+  color: rgba(0,0,0,.5);
+  text-align: center;
+  width: 100%;
+  text-transform: none;
+    }
+
+h3 {
+  display: flex;
+  justify-content: center;
+	font: 400 2em 'Raleway', sans-serif;
+  color: rgba(0,0,0,.5);
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  -webkit-user-select: all; /* Safari 3.1+ */
+  -moz-user-select: all; /* Firefox 2+ */
+  -ms-user-select: all; /* IE 10+ */
+  user-select: all; /* Standard syntax */
+}
+
+#angle {
+  width: 2em;
+}
+
+.directional{
+  text-transform: none;
+}
