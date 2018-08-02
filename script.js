@@ -53,9 +53,9 @@ color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
 randomButton.addEventListener("click", processRandom);
 top.addEventListener("input", setDirection);
-bottom.addEventListener("input", setGradient);
-right.addEventListener("input", setGradient);
-left.addEventListener("input", setGradient);
+bottom.addEventListener("input", setDirection);
+right.addEventListener("input", setDirection);
+left.addEventListener("input", setDirection);
 
 
 setGradient();
