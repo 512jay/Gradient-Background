@@ -43,9 +43,11 @@ h3 {
 
 .directional{
   display: flex;
-  justify-content: space-around;
+  flex-direction:column;
+  align-items: center;
   text-transform: none;
   font-size: 1.5em;
+  margin: 1em;
 }
 #randomizer{
     font-size: 2em;
@@ -53,7 +55,11 @@ h3 {
 }
 #directions {
    text-transform: none;
- 
+}
+.west-east
+{
+  display:flex;
+  margin-left: 1.5em;
 }
 #bak{
   font: 400 1em 'Raleway', sans-serif;
@@ -65,11 +71,8 @@ h3 {
 }
 .color1{
   width: 40%;
-
 }
 
 .color2{
   width:40%;
-
-
 }
