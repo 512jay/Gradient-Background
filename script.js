@@ -4,7 +4,7 @@ var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 var randomButton = document.getElementById("randomizer");
-var top = document.getElementById("top");
+var topButton = document.getElementById("top");
 var bottom = document.getElementById("bottom");
 var right = document.getElementById("right");
 var left = document.getElementById("left");
@@ -17,7 +17,8 @@ let setGradient = () => {
   	+ ", "
   	+ color2.value
   	+ ")";
-	body.style.background = "linear-gradient("
+
+	  body.style.background = "linear-gradient("
 	  +dir
   	+ color1.value
   	+ ", "
@@ -25,8 +26,21 @@ let setGradient = () => {
   	+ ")";
   	css.textContent = backgroundCSS;
   	bakCSS.textContent = '<body style="background: '+ backgroundCSS + ';">';
+  
+  dirBackgrounds();
 }
 
+let dirBackgrounds = () => {
+  butBack = "to bottom, ";
+  console.log(bottom);
+  bottom.style.background = "linear-gradient("+butBack+ color1.value+ ", "+ color2.value+ ")";
+  butBack = "to top, ";
+  topButton.style.background = "linear-gradient("+butBack+ color1.value+ ", "+ color2.value+ ")";
+  butBack = "to right, ";
+  right.style.background = "linear-gradient("+butBack+ color1.value+ ", "+ color2.value+ ")";
+  butBack = "to left, ";
+  left.style.background = "linear-gradient("+butBack+ color1.value+ ", "+ color2.value+ ")";
+}
 let processRandom = () => {
   color1.value = randomColor();
 	color2.value = randomColor();
@@ -55,7 +69,7 @@ let setDirection = (event) => {
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
 randomButton.addEventListener("click", processRandom);
-top.addEventListener("click", setDirection);
+topButton.addEventListener("click", setDirection);
 bottom.addEventListener("click", setDirection);
 right.addEventListener("click", setDirection);
 left.addEventListener("click", setDirection);
