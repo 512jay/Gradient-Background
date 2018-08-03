@@ -44,3 +44,16 @@ h3 {
 .directional{
   text-transform: none;
 }
+
+#directions {
+   text-transform: none;
+ 
+}
+#bak{
+  font: 400 1em 'Raleway', sans-serif;
+  -webkit-user-select: all; /* Safari 3.1+ */
+  -moz-user-select: all; /* Firefox 2+ */
+  -ms-user-select: all; /* IE 10+ */
+  user-select: all; /* Standard syntax */
+
+}

@@ -1,4 +1,5 @@
 var css = document.querySelector("h3");
+var bakCSS = document.getElementById("bak")
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
@@ -10,13 +11,20 @@ var left = document.getElementById("left");
 var dir = "to right, ";// initial value.
 
 let setGradient = () => {
+	var backgroundCSS="linear-gradient("
+	  +dir
+  	+ color1.value
+  	+ ", "
+  	+ color2.value
+  	+ ")";
 	body.style.background = "linear-gradient("
 	  +dir
   	+ color1.value
   	+ ", "
   	+ color2.value
   	+ ")";
-  	css.textContent = body.style.background;
+  	css.textContent = backgroundCSS;
+  	bakCSS.textContent = '<body style="background: '+ backgroundCSS + ';">';
 }
 
 let processRandom = () => {
@@ -31,10 +39,7 @@ let randomColor = () => {
 }
 
 let setDirection = (event) => {
-	console.log(event.target);
-	console.log(event.target.type);
 	if (event.target.type==="radio"){
-		console.log("Time to change directions on ",event.target.id);
 		if( event.target.id == "top" ){
 			dir = "to top, ";
 		} else if ( event.target.id == "right" ){
