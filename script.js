@@ -39,7 +39,7 @@ let randomColor = () => {
 }
 
 let setDirection = (event) => {
-	if (event.target.type==="radio"){
+	if (event.target.name==="direction"){
 		if( event.target.id == "top" ){
 			dir = "to top, ";
 		} else if ( event.target.id == "right" ){
@@ -55,10 +55,10 @@ let setDirection = (event) => {
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
 randomButton.addEventListener("click", processRandom);
-top.addEventListener("input", setDirection);
-bottom.addEventListener("input", setDirection);
-right.addEventListener("input", setDirection);
-left.addEventListener("input", setDirection);
+top.addEventListener("click", setDirection);
+bottom.addEventListener("click", setDirection);
+right.addEventListener("click", setDirection);
+left.addEventListener("click", setDirection);
 
 
 setGradient();
