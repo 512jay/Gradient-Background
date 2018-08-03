@@ -11,14 +11,12 @@ var dir = "to right, ";// initial value.
 
 let setGradient = () => {
 	body.style.background = "linear-gradient("
-	  +dir//+"to right, "
+	  +dir
   	+ color1.value
   	+ ", "
   	+ color2.value
   	+ ")";
-
   	css.textContent = body.style.background;
-  	console.log("instance ran");
 }
 
 let processRandom = () => {
@@ -33,17 +31,17 @@ let randomColor = () => {
 }
 
 let setDirection = (event) => {
-	console.log(event);
-	console.log(event.srcElement.type);
-	if (event.srcElement.type==="radio"){
-		console.log("Time to change directions on ",event.srcElement.id);
-		if( event.srcElement.id == "top" ){
+	console.log(event.target);
+	console.log(event.target.type);
+	if (event.target.type==="radio"){
+		console.log("Time to change directions on ",event.target.id);
+		if( event.target.id == "top" ){
 			dir = "to top, ";
-		} else if ( event.srcElement.id == "right" ){
+		} else if ( event.target.id == "right" ){
 			dir = "to right, ";
-		}else if ( event.srcElement.id == "left" ){
+		}else if ( event.target.id == "left" ){
 			dir = "to left, ";
-		}else if ( event.srcElement.id == "bottom" ){
+		}else if ( event.target.id == "bottom" ){
 			dir = "to bottom, ";
 		}
 		setGradient();
