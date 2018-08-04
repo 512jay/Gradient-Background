@@ -47,9 +47,16 @@ let processRandom = () => {
 	setGradient();
 }
 
+
 let randomColor = () => {
-	return ("#"
-	+('00000'+(Math.random()*(1<<24)|0).toString(16)).slice(-6));
+  let hexes = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+  let randomColor = "#";
+  do
+  {
+    let hex = Math.floor(Math.random() * 16);
+    randomColor = randomColor.concat(hexes[hex]);
+  } while (randomColor.length < 7);
+  return randomColor;
 }
 
 let setDirection = (event) => {
