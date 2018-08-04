@@ -81,5 +81,5 @@ bottom.addEventListener("click", setDirection);
 right.addEventListener("click", setDirection);
 left.addEventListener("click", setDirection);
 
-
+processRandom();
 setGradient();
