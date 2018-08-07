@@ -48,7 +48,7 @@ h3 {
   justify-content: center;
   /* align-items: center; */
 
-  /* text-transform: none; */
+  text-transform: none;
 
 
   /* border-color:black; */
@@ -84,7 +84,7 @@ h3 {
   -moz-user-select: all; /* Firefox 2+ */
   -ms-user-select: all; /* IE 10+ */
   user-select: all; /* Standard syntax */
-
+ 
 }
 .color1{
   width: 25%;
@@ -94,5 +94,10 @@ h3 {
 .color2{
   width: 25%;
   height:3em;
+}
+
+p{
+  text-transform: none;
+
 }
 
