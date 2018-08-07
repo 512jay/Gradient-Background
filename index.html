@@ -3,19 +3,15 @@
 <head>
   <meta charset="utf-8"/>
 	<title>Gradient Background</title>
-  <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Raleway:400,900i&effect=anaglyph">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body id="gradient">
-  <h1 class="font-effect-anaglyph" >Background Generator</h1>
+  <h1>Background Generator</h1>
   <div class="directional">
-    <button class="directional" id="top"  name="direction">top</button>
-    <div class="west-east">
-      <button class="directional" id="left" name="direction">left</button>
-      <button class="directional" id="right" name="direction">right</button>
-    </div>
-    <button class="directional" id="bottom"  name="direction">bottom</button>
+    <button class="dirBtn" id="top"  name="direction">top</button>
+    <button class="dirBtn"  id="left" name="direction">left</button>
+    <button class="dirBtn"  id="right" name="direction">right</button>
+    <button class="dirBtn"  id="bottom"  name="direction">bottom</button>
 </div>
 <div>
     <input class="color1" type="color" name="color1" value="#00ff00">
@@ -23,10 +19,10 @@
 </div>
   <h2>Current CSS Background</h2>
   <h3></h3>
-  <button id="randomizer" class="btn default">Randomizer</button>
+  <button id="randomizer" >Randomizer</button>
   <div id = "directions">
   <p> To use this as your background on an html page simply replace your current  &lt;body> tag with: </p>
-  <p id="bak" class="font-effect-anaglyph"></p>
+  <p id="bak"></p>
 </div>
   <script type="text/javascript" src="script.js"></script>
 </body>

@@ -25,14 +25,13 @@ let setGradient = () => {
   	+ color2.value
   	+ ")";
   	css.textContent = backgroundCSS;
-  	bakCSS.textContent = '<body style="background: '+ backgroundCSS + ';">';
-  
+		bakCSS.textContent = '<body style="background: '+ backgroundCSS + ';">';
+		randomButton.style.background = "linear-gradient("+dir+ color1.value+ ", "+ color2.value+ ")";
   dirBackgrounds();
 }
 
 let dirBackgrounds = () => {
   butBack = "to bottom, ";
-  console.log(bottom);
   bottom.style.background = "linear-gradient("+butBack+ color1.value+ ", "+ color2.value+ ")";
   butBack = "to top, ";
   topButton.style.background = "linear-gradient("+butBack+ color1.value+ ", "+ color2.value+ ")";

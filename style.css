@@ -43,24 +43,41 @@ h3 {
 
 .directional{
   display: flex;
-  flex-direction:column;
-  align-items: center;
-  text-transform: none;
+  flex-wrap : wrap;
+  flex-direction:row;
+  justify-content: center;
+  /* align-items: center; */
+
+  /* text-transform: none; */
+
+
+  /* border-color:black; */
+}
+
+.directional :hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.dirBtn {
+
   font-size: 1.5em;
   margin: 1em;
-}
-#randomizer{
-    font-size: 2em;
+  border-radius:12.5%;
+  width : 10%;
+  height: 3em;
 
 }
-#directions {
-   text-transform: none;
+
+#randomizer{
+    font-size: 3em;
+    border-radius:12.5%;
 }
-.west-east
-{
-  display:flex;
-  margin-left: 1.5em;
+
+#randomizer:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+
 #bak{
   font: 400 1em 'Raleway', sans-serif;
   -webkit-user-select: all; /* Safari 3.1+ */
@@ -70,10 +87,10 @@ h3 {
 
 }
 .color1{
-  width: 40%;
+  width: 25%;
 }
 
 .color2{
-  width:40%;
+  width: 25%;
 }
 
