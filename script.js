@@ -1,5 +1,5 @@
 var css = document.querySelector("h3");
-var bakCSS = document.getElementById("bak")
+var bakCSS = document.getElementById("bak");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
@@ -28,7 +28,7 @@ let setGradient = () => {
 		bakCSS.textContent = '<body style="background: '+ backgroundCSS + ';">';
 		randomButton.style.background = "linear-gradient("+dir+ color1.value+ ", "+ color2.value+ ")";
   dirBackgrounds();
-}
+};
 
 let dirBackgrounds = () => {
   butBack = "to bottom, ";
@@ -39,12 +39,12 @@ let dirBackgrounds = () => {
   right.style.background = "linear-gradient("+butBack+ color1.value+ ", "+ color2.value+ ")";
   butBack = "to left, ";
   left.style.background = "linear-gradient("+butBack+ color1.value+ ", "+ color2.value+ ")";
-}
+};
 let processRandom = () => {
   color1.value = randomColor();
 	color2.value = randomColor();
 	setGradient();
-}
+};
 
 
 let randomColor = () => {
@@ -56,7 +56,7 @@ let randomColor = () => {
     randomColor = randomColor.concat(hexes[hex]);
   } while (randomColor.length < 7);
   return randomColor;
-}
+};
 
 let setDirection = (event) => {
 	if (event.target.name==="direction"){
@@ -71,7 +71,7 @@ let setDirection = (event) => {
 		}
 		setGradient();
 	}
-}
+};
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
 randomButton.addEventListener("click", processRandom);
