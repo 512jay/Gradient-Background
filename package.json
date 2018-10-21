@@ -1,0 +1,19 @@
+{
+  "name": "gradient-background",
+  "version": "1.0.0",
+  "description": "Genrate gradient backgrounds",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/512jay/Gradient-Background.git"
+  },
+  "author": "john davis jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/512jay/Gradient-Background/issues"
+  },
+  "homepage": "https://github.com/512jay/Gradient-Background#readme"
+}
